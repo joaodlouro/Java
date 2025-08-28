@@ -13,7 +13,9 @@ public class AlgoritmoInt {
          + numero + " e " + antecessor);
 
         in.close();
+   
+}
+}
 
-    
-}
-}
+
+
