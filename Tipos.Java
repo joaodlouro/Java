@@ -38,8 +38,16 @@
 // boolean bo= false;
 // boolean bo2=true;
 
-if(bo2){
+String Name = "Pedro";
+
+int[] grupoDeInteiros = {1, 2, 3, 4, 5 , 333333}
+int[] meusNumeros = int [4];
+
+if(Name.isBlack()){
   System.out.println("verdadeiro");
+  { else if (receba == "Pedro"){
+      System.out.prinln("Pedro")
+  }
 }else{
   System.out.println("falso");
 }
