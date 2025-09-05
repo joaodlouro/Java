@@ -1,6 +1,7 @@
+package Exercícios;
 import java.util.Scanner;
 
-public class AlgoritmoIntDocs {
+public class AlgoritmoInt {
     public static void main (String[] args){
         Scanner in = new Scanner (System.in);
         
@@ -13,7 +14,9 @@ public class AlgoritmoIntDocs {
          + numero + " e " + antecessor);
 
         in.close();
+   
+}
+}
 
-    
-}
-}
+
+
