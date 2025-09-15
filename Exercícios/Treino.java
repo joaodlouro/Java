@@ -1,27 +1,25 @@
+
 package Exercícios;
 import java.util.Scanner;
-
 public class Treino{
+    public static void main (String[]args){
 
-  public static void main(String[]args){
+      Scanner sc = new Scanner(System.in);
+      
+      System.out.println("Digite um valor numerico valido");
 
-    Scanner sc= new Scanner(System.in);
-     
-    System.out.println("informe um numero");
-     
+      if(sc.hasNextInt()){
 
-    if(sc.hasNextInt()){
+        int valor = sc.nextInt();
+        int Quadarado = valor * valor;
 
-        int numero = sc.nextInt();
-        int quadrado = numero * numero;
-        
-        System.out.println("Esse e o quadrado do numero:" + quadrado);
-    } else {
-       System.out.println("Não e um valor valido");
+        System.out.println("Valor quadrado é:" + Quadarado);
+ 
+      } else{
+        System.out.println (" Isso não e um valor valido!!!");
+      }
+      sc.nextInt();
+
     }
-
-   sc.close();
-
-  }
 
 }
