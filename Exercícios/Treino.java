@@ -1,25 +1,21 @@
-
 package Exercícios;
 import java.util.Scanner;
-public class Treino{
-    public static void main (String[]args){
 
-      Scanner sc = new Scanner(System.in);
-      
-      System.out.println("Digite um valor numerico valido");
+public class Treino {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-      if(sc.hasNextInt()){
+        System.out.println("Você está ai?");
+        String resposta = sc.nextLine(); 
 
-        int valor = sc.nextInt();
-        int Quadarado = valor * valor;
+        if(resposta.equalsIgnoreCase("sim")) {
+            System.out.println("oi, você deve");
+        } else if(resposta.equalsIgnoreCase("não")) {
+            System.out.println("não faça isso...");
+        } else {
+            System.out.println("Você não existe!");
+        }
 
-        System.out.println("Valor quadrado é:" + Quadarado);
- 
-      } else{
-        System.out.println (" Isso não e um valor valido!!!");
-      }
-      sc.nextInt();
-
+        sc.close();
     }
-
 }
