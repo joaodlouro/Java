@@ -1,22 +1,38 @@
 package Exercícios;
+
 import java.util.Scanner;
 
-public class AlgoritmoInt {
-    public static void main (String[] args){
-        Scanner in = new Scanner (System.in);
-        
-        System.out.print("Digite um valor inteiro:");
-        int numero = in.nextInt();
+public class  AlgoritmoInt{
+    public static void main (String[]args){
 
-        int antecessor = numero - 1;
+     Scanner sc = new Scanner(System.in);
 
-        System.out.println("o numero antecessor de: " 
-         + numero + " e " + antecessor);
+     System.out.println("De um valor numerico");
 
-        in.close();
-   
+      if (sc.hasNextInt()) { 
+            int valor = sc.nextInt();
+
+     if(valor > 0){
+
+        System.out.println("Valor numerico positivo!");
+     } else if( valor < 0 ){
+        System.out.printf("valor negativo!");
+
+     } else{
+        System.out.println("isso e zero!");
+ 
+     } 
+    }else {
+        System.out.println("isso nao e um numero!");
+     }
+     sc.close();
+
+    }
+
+
+
+
+
+
+
 }
-}
-
-
-
