@@ -1,45 +1,33 @@
 package Exercícios;
-
 import java.util.Scanner;
 
 public class Treino {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite a quantidade de litros:");
-        double litros = sc.nextDouble();
+        System.out.println("Qual tipo de combustível? (A para Alcool e G para Gasolina)");
+        String Tipo = sc.nextLine();
 
-        System.out.println("Digite o tipo de combustível (A-álcool / G-gasolina):");
-        String tipo = sc.next();
+        System.out.println("Quantos litros deseja usar?");
+        int Litros = sc.nextInt();
 
-        double precoLitro = 0;
-        double desconto = 0;
+        double preco, desconto;
 
-        if (tipo.equalsIgnoreCase("A")) {
-            precoLitro = 3.90;
-            if (litros <= 20) {
-                desconto = 0.03;
-            } else {
-                desconto = 0.05;
-            }
-        } else if (tipo.equalsIgnoreCase("G")) {
-            precoLitro = 4.30;
-            if (litros <= 20) {
-                desconto = 0.04;
-            } else {
-                desconto = 0.06;
-            }
+        if (Tipo.equalsIgnoreCase("A")) {
+            preco = 3.90;
+            desconto = (Litros <= 20) ? 0.03 : 0.05;
+        } else if (Tipo.equalsIgnoreCase("G")) {
+            preco = 4.30;
+            desconto = (Litros <= 20) ? 0.04 : 0.06;
         } else {
-            System.out.println("Tipo de combustível inválido!");
-            sc.close();
-            return;
+            System.out.println("Valor inválido!");
+            return; 
         }
 
-        double valorBruto = litros * precoLitro;
-        double valorDesconto = valorBruto * desconto;
-        double valorFinal = valorBruto - valorDesconto;
+        double Total = Litros * preco * (1 - desconto);
 
-        System.out.printf("Valor a ser pago: R$ %.2f%n", valorFinal);
+     System.out.printf("valor a ser pao é:%.2f\n", Total);
 
         sc.close();
     }

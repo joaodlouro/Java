@@ -7,7 +7,7 @@ public class AlgoritmoInt{
     Scanner sc = new Scanner( System.in);
 
     System.out.println("você gosta de café?");
-      String Resposta = sc.nextLine(). trim(). toLowerCase();
+      String Resposta = sc.nextLine();
        
 
       if(Resposta.equals("sim")){
@@ -21,7 +21,7 @@ public class AlgoritmoInt{
       }
 
 
-      
+
       sc.close();
       
 
