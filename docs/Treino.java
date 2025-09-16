@@ -1,4 +1,4 @@
-package Exercícios;
+package docs;
 import java.util.Scanner;
 
 public class Treino {
