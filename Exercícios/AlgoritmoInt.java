@@ -4,37 +4,33 @@ import java.util.Scanner;
 public class AlgoritmoInt{
    public static void main(String[]args){
 
-     Scanner sc= new Scanner(System.in);
+    Scanner sc = new Scanner( System.in);
 
-     System.out.println("De uma valor numerico positivo");
-     
-  
+    System.out.println("você gosta de café?");
+      String Resposta = sc.nextLine(). trim(). toLowerCase();
+       
+
+      if(Resposta.equals("sim")){
+
+         System.out.println("Eu já esperava isso");
+      }
+      else if(Resposta.equals("nao")){
+        System.out.println("Por que não??");
+      } else{
+        System.out.println("Por favor, me responda!!!");
+      }
 
 
-     if(sc.hasNextInt()){
-       int  valor = sc.nextInt();
-     
+      
+      sc.close();
+      
 
-
-     if(valor > 0){
-      System.err.println("valor positivo!");
-     } else if(valor < 0){
-      System.out.println("valor negativo!");
-     } 
-     else{
-      System.out.println("isso e zero!"); 
-
-     }
-    } else {
-      System.out.println("isso nao e um numero!");
 
      }
 
-
-     sc.close();
 
 
    }
 
-}
+
 
