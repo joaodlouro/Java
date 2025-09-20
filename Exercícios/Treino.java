@@ -5,32 +5,48 @@ import java.util.Scanner;
 public class Treino{
     public static void main(String[]args){
         Scanner sc= new Scanner(System.in);
-        
-        System.out.println("Numero total de leitrores");
-        int total= sc.nextInt();
 
-        System.out.println("Numero de votos validos");
-        int validos= sc.nextInt();
 
-        System.out.println("Votos en brancos");
-        int brancos= sc.nextInt();
+        System.out.println("qual o valor do ingresso?");
+        double valori = sc.nextDouble();
 
-        System.out.println("votos nulos");
-        int nulos= sc.nextInt();
+         System.out.println("quantos socios?");
+         int socios = sc.nextInt();
 
-        double Pvalidos = (validos * 100.0) / total;
+         System.out.println("quantas crianças?");
+         int crianças = sc.nextInt();
 
-        double PBrancos = (brancos * 100.0) / total;
+         System.out.println("pessoasm sem desconto");
+         int semdesconto = sc.nextInt();
 
-        double PNulos = (nulos * 100.0) / total;
+       
+        double Vcrinaças= crianças * valori;
 
-      System.out.printf(
-     "P válidos: %.2f%%\nP brancos: %.2f%%\nP nulos: %.2f%%\n",  Pvalidos, PBrancos, PNulos
-);
+        double VDesconto = socios * (valori * 0.30);
 
-        
+       double vsemd = semdesconto * valori;
 
-          
+       Double criançasV = crianças * valori;
+
+       double valorS = socios * (valori * 0.70);
+
+       double narrecadado = VDesconto + criançasV;
+
+        double rendaT = vsemd + valorS;
+
+        int totalP =  socios+ crianças + semdesconto;
+
+
+
+
+         System.out.println("publico total"+ totalP);
+
+
+         System.out.printf("renda total: %.2f.\n", rendaT) ;
+
+          System.out.printf("nao arrecadado: %.2f.\n", narrecadado) ;
+                               
+                               
  
           sc.close();
 
