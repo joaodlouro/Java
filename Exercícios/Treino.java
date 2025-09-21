@@ -7,47 +7,63 @@ public class Treino{
         Scanner sc= new Scanner(System.in);
 
 
-        System.out.println("qual o valor do ingresso?");
-        double valori = sc.nextDouble();
+double[] valoresc = {1.0, 0.50, 0.25, 0.10, 0.05};
 
-         System.out.println("quantos socios?");
-         int socios = sc.nextInt();
+int[] quantidade = new int [valoresc.length];
 
-         System.out.println("quantas crianças?");
-         int crianças = sc.nextInt();
 
-         System.out.println("pessoasm sem desconto");
-         int semdesconto = sc.nextInt();
+String [] tipos = {"1 real", "50 centavos", "25 centavos", "10 centavos", " 5 centavos"};
+
+
+
+
+ System.out.println("qual o preço?");
+      double preço = sc.nextDouble();
+
+
+     for (int i = 0; i < quantidade.length; i++) {
+            System.out.print("Quantidade de moedas de " + tipos[i] + ": ");
+            quantidade[i] = sc.nextInt();
+        }
+
+        double totalC = 0;
+
+        for (int i = 0; i < quantidade.length; i++) {
+            totalC += quantidade[i] * valoresc[i];
+        }
+
+ 
+        System.out.printf("Total no cofrinho: R$ %.2f%n", totalC);
+
+         if (totalC >= preço) {
+            System.out.println("Você pode comprar o produto!");
+        } else {
+            System.out.println("Saldo insuficiente para comprar o produto.");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+     
+
 
        
-        double Vcrinaças= crianças * valori;
-
-        double VDesconto = socios * (valori * 0.30);
-
-       double vsemd = semdesconto * valori;
-
-       Double criançasV = crianças * valori;
-
-       double valorS = socios * (valori * 0.70);
-
-       double narrecadado = VDesconto + criançasV;
-
-        double rendaT = vsemd + valorS;
-
-        int totalP =  socios+ crianças + semdesconto;
 
 
 
 
-         System.out.println("publico total"+ totalP);
-
-
-         System.out.printf("renda total: %.2f.\n", rendaT) ;
-
-          System.out.printf("nao arrecadado: %.2f.\n", narrecadado) ;
-                               
-                               
- 
           sc.close();
 
                     
