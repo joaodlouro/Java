@@ -1,8 +1,22 @@
+ 
+// Faça um programa que leia o valor de um produto X e leia a quantidade de reais de
+// um cofrinho que contenha:
+// ♦ N moedas de 1 real;
+// ♦ N moedas de 50 centavos;
+// ♦ N moedas de 25 centavos;
+// ♦ N moedas de 10 centavos;
+// ♦ N moedas de 5 centavos;
+// O programa deverá verificar se o total de reais que contém no cofrinho é o bastante
+// para a compra o produto X.
+
+///////////////////////////
+
+
 package Exercícios;
 import java.util.Scanner;
 
 
-public class Treino{
+public class cofre{
     public static void main(String[]args){
         Scanner sc= new Scanner(System.in);
 
