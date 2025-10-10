@@ -10,22 +10,31 @@ public class LerIdade {
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
 
-          
-        System.out.print("Digite sua idade: ");
-        int idade = sc.nextInt();
+     
+         int idade;
 
-        while (idade <=0 || idade >=150 ) {
-
-            System.out.println("idade invalida, digite novamente: ");
+        for( ;;){
+            System.out.println("Digite a idade: ");
             idade = sc.nextInt();
 
-        
+            if(idade <= 0 || idade >= 150){
+                System.out.println("idade invalida, digite novameente");
+                
+                 
+                 
+            } else {
+                System.out.println("idade valida: " + idade);
+                break;
+
+
+            }
+                      
+             
             
         }
-         System.out.println("idade valida: " + idade);
-
-        sc.close();
+         sc.close(); 
         
+     
        
     }
 
