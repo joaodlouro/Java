@@ -20,41 +20,29 @@ public class retangulo {
    System.out.println("quantidade de colunas");
    int col = sc.nextInt();
 
-   for(int i= 0; i < lin +2; i++){
-    for(int j= 0; j< col +2;j++){
-        if(i== 0 || i == lin +1){
-        System.out.print("-");
 
-        }else if(j== 0 || j == col+1){
-                  System.out.print("|");
-        }else{ 
-            System.out.print(" ");
+   for(int i= 0;i < lin +2; i++){
+    for(int j = 0;j < col +2; j++){
+
+        if(i == 0 | i == lin +1){
+            System.out.print(" - ");
+
+        } else if(j ==0 | j == col +1){
+            System.out.print(" | ");
+
+        } else {
+            System.out.print(" 0 ");
         }
-
+       
 
     }
-    System.out.println();
+     System.out.println();
+
    }
-   sc.close();
    
+   sc.close();
+
+
     }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
+    }
