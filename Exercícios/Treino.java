@@ -6,7 +6,7 @@ public class Treino {
 
         int quadrado = 15;
 
-        int furo = quadrado / 2;
+        
 
         for(int i = 0;i < quadrado; i++){
           for(int j = 0; j < quadrado; j++){
