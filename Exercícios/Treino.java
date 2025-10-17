@@ -1,33 +1,84 @@
+/*
+ Faça um programa que, para um número indeterminado de pessoas: leia a idade de
+cada uma, sendo que a idade 0 (zero) indica o fim da leitura e não deve ser
+considerada. A seguir calcule:
+• o número de pessoas;
+• a idade média do grupo;
+• a menor idade e a maior idade
+ */
+
+
 package Exercícios;
+import java.util.Scanner;
 
 public class Treino {
     public static void main(String[] args) {
 
-     int  quadarado= 15;
-     int furo = 5;
+          Scanner sc= new Scanner(System.in);
 
-     int inicio = (quadarado - furo) / 2;
-     int fim =  inicio  + furo - 1;
+          int idade;
+          int maiorIdade = 0;
+          int  menorIdade = 0; 
+          double somaIdade = 0; 
+          int pessoas = 0; 
 
-     for(int i =0;i < quadarado; i ++){
-          for(int j = 0;j < quadarado ; j++){
-             if(i == 0 || i == quadarado -1 || j ==0|| j == quadarado -1) {
-                System.out.print("* ");
-           
-            } else if(i >= inicio && i <= fim && j >= inicio && j <= fim){
-                System.out.print("  ");
 
-            }
-            else {
-                System.out.print("* ");
-            }
+          while(true){
             
+                 System.out.println("Digite um para para o loop"); 
+                System.out.println("valor de idade:"); 
+                idade = sc.nextInt();
+
+            if (idade == 0){
+                System.out.println("fim do loop ");
+                
+                break;
+              
+            }
+            pessoas ++;   // ou pessoa = pessoas + 1; 
+            somaIdade = idade + somaIdade;
+             
+            if(pessoas == 1 ){
+                menorIdade= idade;
+                maiorIdade = idade;
+            } else{
+                if (idade < menorIdade) menorIdade = idade;
+                if (idade > maiorIdade) maiorIdade = idade;
+            }
+                    
+        
+
 
           }
-        System.out.println();
-     }
+          double media = somaIdade / pessoas;
+
+      System.out.println("Número de pessoas: " + pessoas);
+       System.out.println("Idade média: " + media);
+        System.out.println("Menor idade: " + menorIdade);
+        System.out.println("Maior idade: " + maiorIdade);
+
+        
+
+
+          }
+
      
 
 
     }
-}
+
+/*
+   if (idade < menorIdade) menorIdade = idade;
+                if (idade > maiorIdade) maiorIdade = idade;
+
+                mesma coisa que 
+
+                if (idade < menorIdade){
+                   menorIdade= idade;
+                }
+
+                if(idade > maiorIdade){
+                   maiorIdade= idade;
+                }
+
+*/
