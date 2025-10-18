@@ -1,13 +1,8 @@
-/*
- Faça um programa que, para um número indeterminado de pessoas: leia a idade de
-cada uma, sendo que a idade 0 (zero) indica o fim da leitura e não deve ser
-considerada. A seguir calcule:
-• o número de pessoas;
-• a idade média do grupo;
-• a menor idade e a maior idade
- */
 
-
+/*Escreva um algoritmo para ler 2 valores e, se o segundo valor informado for ZERO,
+deve ser lido um novo valor, ou seja, para o segundo valor lido não pode ser aceito o
+valor zero. Após ler os 2 valores, imprimir o resultado da divisão do primeiro valor
+lido pelo segundo valor lido. */
 package Exercícios;
 import java.util.Scanner;
 
@@ -16,69 +11,31 @@ public class Treino {
 
           Scanner sc= new Scanner(System.in);
 
-          int idade;
-          int maiorIdade = 0;
-          int  menorIdade = 0; 
-          double somaIdade = 0; 
-          int pessoas = 0; 
+          int valor1, valor2;
+
+          System.out.println(" valor 1: ");
+          valor1 = sc.nextInt();
 
 
-          while(true){
-            
-                 System.out.println("Digite um para para o loop"); 
-                System.out.println("valor de idade:"); 
-                idade = sc.nextInt();
+          while (true) {
+            System.out.println("valor 2 : ");
+            valor2 = sc.nextInt();
 
-            if (idade == 0){
-                System.out.println("fim do loop ");
-                
-                break;
-              
-            }
-            pessoas ++;   // ou pessoa = pessoas + 1; 
-            somaIdade = idade + somaIdade;
-             
-            if(pessoas == 1 ){
-                menorIdade= idade;
-                maiorIdade = idade;
+            if(valor2 == 0){
+                  System.out.println("valor 2 não pode ser 0");
+
             } else{
-                if (idade < menorIdade) menorIdade = idade;
-                if (idade > maiorIdade) maiorIdade = idade;
+                 
+                  break;
             }
-                    
-        
-
-
+            
           }
-          double media = somaIdade / pessoas;
+          double divisão = (double) valor1 / valor2;
 
-      System.out.println("Número de pessoas: " + pessoas);
-       System.out.println("Idade média: " + media);
-        System.out.println("Menor idade: " + menorIdade);
-        System.out.println("Maior idade: " + maiorIdade);
+          System.out.printf(" valor divisão: %.2f\n", + divisão);
+          
+          sc.close();
 
-        
-
-
-          }
-
-     
-
-
+          
     }
-
-/*
-   if (idade < menorIdade) menorIdade = idade;
-                if (idade > maiorIdade) maiorIdade = idade;
-
-                mesma coisa que 
-
-                if (idade < menorIdade){
-                   menorIdade= idade;
-                }
-
-                if(idade > maiorIdade){
-                   maiorIdade= idade;
-                }
-
-*/
+}
