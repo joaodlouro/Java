@@ -18,8 +18,8 @@ public static void main(String[] args) {
 
      for (int k = 1; k <= i; k++) {
                 System.out.print(k + " ");
-            }50
-            
+            }
+
     System.out.println();
 
 
