@@ -1,42 +1,33 @@
 package Exercícios;
-
-import java.util.Scanner;
+import java.util.Scanner;;
 
 public class Treino {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+   
+        Scanner sc = new Scanner(System.in); 
+      System.out.println(" numero inteiro positivo: ");
+      int n = sc.nextInt();
 
-        System.out.println("Número de início do intervalo:");
-        int inicio = sc.nextInt();
+      int o = n;
+      int intervalo = 0;
 
-        System.out.println("Fim do intervalo:");
-        int fim = sc.nextInt();
+      while(n > 0 ){
+        int digito = n % 10;
+       
+        intervalo = intervalo * 10  + digito;
 
-        int totalPrimos = 0;
+        n = n / 10;
 
-        for (int i = inicio; i <= fim; i++) {
-            if (i < 2) continue; 
-            boolean primo = true;
+      }
+       
+      if(o == intervalo){
+        System.out.println(" é palindromo ");
+      } else {
+        System.out.println(" não é palindromo ");
 
-            for (int j = 2; j < i; j++) {
-                if (i % j == 0) {
-                    primo = false;
-                    break;
-                }
-            }
-
-            if (primo) {
-                System.out.println(i + " é primo!");
-                totalPrimos++;
-            }
-        }
-
-        if (totalPrimos == 0) {
-            System.out.println("Nenhum número primo encontrado.");
-        } else {
-            System.out.println("Total de primos: " + totalPrimos);
-        }
-
-        sc.close();
+      }
+      sc.close();
+      
+      
     }
 }
