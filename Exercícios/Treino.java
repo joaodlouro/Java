@@ -3,43 +3,32 @@ import java.util.Scanner;
 
 public class Treino {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int numero= 1;
         
-    while(true){
+         for(int i = 100;i <= 999; i++){
 
-       System.out.println("Digite um número (0 para sair): ");
-         numero= sc.nextInt();
+            int centenas = i /100;  // primeiro dígito 
+            int dezena= (i / 10) % 10; // segundo
+            int unidade = i % 10; // terceiro
+             int produto = centenas * dezena * unidade;
 
-         if(numero <= 0){
-            break;
+            if(centenas < dezena && dezena < unidade){
+               System.out.println("crescente: " + i );
+               System.out.println("produto: "+produto);
+            } 
+
+            if(centenas > dezena && dezena > unidade){
+               System.out.println("decrescente: " + i );
+               System.out.println("prduto: "+produto);
+
+            }
 
          }
-         boolean ehquadrado = false;
-         
 
 
-         for(int i = 1;i * i <= numero; i++){
-            
-          if( i* i == numero){
-            ehquadrado = true;
-            break;
-        
-    }
-
-               
-}
-
- if(ehquadrado ==true){
-        System.out.println("O número " + numero + " é um quadrado perfeito.");
-     } else {
-        System.out.println("O número " + numero + " não é um quadrado perfeito.");
-
-     }
     
 
- 
-    }
-     sc.close();
+
+
+       
 }
 }
