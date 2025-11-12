@@ -3,32 +3,42 @@ import java.util.Scanner;
 
 public class Treino {
     public static void main(String[] args) {
-        
-         for(int i = 100;i <= 999; i++){
+        Scanner sc= new Scanner(System.in);
 
-            int centenas = i /100;  // primeiro dígito 
-            int dezena= (i / 10) % 10; // segundo
-            int unidade = i % 10; // terceiro
-             int produto = centenas * dezena * unidade;
+        System.out.println("de valor de n: ");
+        int x= sc.nextInt();
 
-            if(centenas < dezena && dezena < unidade){
-               System.out.println("crescente: " + i );
-               System.out.println("produto: "+produto);
-            } 
+        double e = 1.0;
+        int potencia;
+        double fatorial;
 
-            if(centenas > dezena && dezena > unidade){
-               System.out.println("decrescente: " + i );
-               System.out.println("prduto: "+produto);
+        for(int i =1 ; i <= 10; i++){
+            fatorial = 1;
+            potencia= 1;
+
+            for(int j = 1;j <=i;j++){
+                fatorial*=j;
 
             }
 
-         }
+            for(int j=1;j<= i;j++){
+                potencia *=x;
+
+            }
+
+            e += potencia / fatorial;
 
 
-    
+
+        }
+        System.out.println("valor aproximado" + x + "é: " + e);
 
 
+        
 
-       
-}
-}
+
+      
+
+
+        }
+    }
