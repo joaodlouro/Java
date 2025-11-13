@@ -10,11 +10,11 @@ public class paresandimpares {
         int countpares = 0; 
         int countimpares = 0;
         int maiorpar = Integer.MIN_VALUE;
-        int menorpimpar = Integer.MAX_VALUE;
+        int menorimpar = Integer.MAX_VALUE;
         double mediaP = 0.0;
         double mediaI = 0.0;
 
-        for(;;){
+        while(true){
 
           System.out.println("Digite um valor maior que 0: ");
           int valor = sc.nextInt();
@@ -33,8 +33,8 @@ public class paresandimpares {
           } else {
             impares = impares + valor;
             countimpares++;
-            if(valor < menorpimpar){
-              menorpimpar = valor;
+            if(valor < menorimpar){
+              menorimpar = valor;
             }
             }
 
@@ -57,7 +57,7 @@ public class paresandimpares {
 
                 System.out.println("-----------------");
 
-                System.out.println("menor impar:  " + menorpimpar);
+                System.out.println("menor impar:  " + menorimpar);
 
                 System.out.println("-----------------");
 

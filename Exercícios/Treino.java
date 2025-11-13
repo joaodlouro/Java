@@ -5,40 +5,56 @@ public class Treino {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
 
-        System.out.println("de valor de n: ");
-        int x= sc.nextInt();
+        int numero;
+        int maiorpar=Integer.MIN_VALUE;
+        int menorimpar=Integer.MAX_VALUE;
+        int par=0;
+        int impar =0;
+        int contadorpar =0;
+        int contadorimpar=0;
+       
 
-        double e = 1.0;
-        int potencia;
-        double fatorial;
+        while (true) {
+            System.out.println("digite um numero: ");
+            numero = sc.nextInt();
+             
 
-        for(int i =1 ; i <= 10; i++){
-            fatorial = 1;
-            potencia= 1;
+             if(numero <= 0){
+                break;
+             }
 
-            for(int j = 1;j <=i;j++){
-                fatorial*=j;
+             if(numero % 2 ==0){
+               par = par + numero;
+               contadorpar++;
 
-            }
+               if(numero > maiorpar){
+                  maiorpar = numero;
+               }
 
-            for(int j=1;j<= i;j++){
-                potencia *=x;
+             } else {
+               impar = impar + numero;
+                contadorimpar ++;
 
-            }
+                if(numero < menorimpar){
+                  menorimpar = numero;
 
-            e += potencia / fatorial;
-
-
+                }
+             }
 
         }
-        System.out.println("valor aproximado" + x + "é: " + e);
 
 
-        
+            double meidaimpar= (double) impar / contadorimpar;
+             double meidapar = (double) par /contadorpar;
 
+           
 
-      
+        System.out.println("esse e o menor impar: " + meidaimpar);
 
+        System.out.println("maior par: " + maiorpar);
 
-        }
+        System.out.println("media par: " + meidapar);
+
+        System.out.println("media impar: " + meidaimpar);
     }
+   }
