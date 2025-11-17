@@ -5,46 +5,18 @@ public class treino {
     public static void main(String[] args) {
 
         Scanner sc= new Scanner(System.in);
+
+         int n [] = {3, 2 ,4 ,5 ,0};
+
+         for(int i = 0; i <= 5 ; i++){
+            System.out.println(n[i]);
+
+
+         }
          
-        int[] vetor= new int[10];
-        int[] vetorInverso= new int[10];
-
-
-        for(int i = 0 ; i <= 10 ; i ++ ){
-
-            System.out.println("digite a posição: ");
-
-            vetor[i]= sc.nextInt();
-
-        }
-
-        for(int i=0; i < 10; i++){
-
-            vetorInverso[i]= vetor[i];
-
-
-
-        }
         
-
-
-        for(){
-
-
-        }
-        
-        for(){
-
-
-        }
 
        
-
-   
-
-     
-         
-
 
 
     }
