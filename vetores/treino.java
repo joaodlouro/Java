@@ -5,16 +5,36 @@ public class treino {
     public static void main(String[] args) {
 
         Scanner sc= new Scanner(System.in);
-
-         int n [] = {3, 2 ,4 ,5 ,0};
-
-         for(int i = 0; i <= 5 ; i++){
-            System.out.println(n[i]);
+ 
+           int [] v1 = new int [10];
+           int [] v2 = new int[10];
 
 
-         }
-         
-        
+           for(int i=0;i < 10; i++){
+            System.out.println("Digite o valor da posiçao " + i);
+            v1[i] = sc.nextInt();
+
+           }
+
+           for(int i = 0; i < 10; i++){
+            v2[i] = v1[9 - i];
+
+           }
+
+
+
+               System.out.println("primeiro vetor: ");
+               for(int i = 0 ; i < 10; i++){
+                System.out.println(v1[i] + "");
+
+               }
+
+
+               System.out.println("segundo vetor: ");
+               for(int i = 0;i < 10; i++){
+                System.out.println(v2[i] + "");
+
+               }
 
        
 
