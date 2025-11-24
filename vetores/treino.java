@@ -9,12 +9,12 @@ public class treino {
  
        int v1[] =  new int[5];
 
-      Arrays.fill ( v1, 10);
+      Arrays.fill ( v1, 10); // vai dizer para add 10 para todos os espaços do vetor
    
       for(int colocandovalores : v1){
         System.out.println(colocandovalores);
 
-      }
+      }  // vai add  ++
 
     }
 }
