@@ -7,16 +7,16 @@ public class treino {
         Scanner sc= new Scanner(System.in);
  
     
-         String meses [] = {"jan ", "fev ", "mar ", "abril ", "maio ", "junho ","julho ","agosto ","setembro ", "outubro ", "novembro ","dezembro "};
+        int n [] = {1,5,6,2,7};
 
-         int dias [] = {31, 28,31,30,31,31,30,31,30,31,30,31};
-         
+        for(int valor : n){
 
-         for(int i= 0 ; i <= meses.length -1; i++){
-            System.out.println("o mes de " + meses[i] + "tem " + dias[i] + " dias ao todo ");
+            System.out.println(valor);
+
+        }
 
 
-         }
+
 
     }
 }
