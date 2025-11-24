@@ -1,4 +1,6 @@
 package vetores;
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class treino {
@@ -8,6 +10,8 @@ public class treino {
  
     
         int n [] = {1,5,6,2,7};
+
+        Arrays.sort(n); // ordenando 
 
         for(int valor : n){
 
