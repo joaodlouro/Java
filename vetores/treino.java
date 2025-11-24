@@ -1,5 +1,4 @@
 package vetores;
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -8,16 +7,19 @@ public class treino {
 
         Scanner sc= new Scanner(System.in);
  
-    
-        int n [] = {1,5,6,2,7};
+        int v1[] = {3,4,2,3,5,6,4};
+        Arrays.sort(v1);
+        for(int vetorlist:v1){
 
-        Arrays.sort(n); // ordenando 
-
-        for(int valor : n){
-
-            System.out.println(valor);
+            System.out.println(vetorlist);
 
         }
+        System.out.println("--------------");
+
+        int p = Arrays.binarySearch(v1, 3); // “Java, procure o valor 2 no vetor e me diga a posição dele.”
+
+        System.out.println(p);
+       
 
 
 
