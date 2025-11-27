@@ -6,33 +6,36 @@ public class treino {
 
         Scanner sc= new Scanner(System.in);
 
-         int [] v1= new int [10];
-         int[] v2 = new int [10];
+        int v1 [] = new int[10];
+        int v2 []= new int [10];
+        
+        
+        for(int i =0; i < 10 ; i++){
+          System.out.println("valores" + i + " ");
 
-         System.out.println("Digite 1- valores para o v1");
+          v1[i]= sc.nextInt();
 
-          for(int i =0; i < 10; i ++){
-            System.out.println("valor " + i + " ");
+        }
 
-            v1[i]= sc.nextInt();
+        int soma= 0;
 
-          }
+        for(int i =0;i <10; i++){
+
+          soma = soma + v1[i];
+
+          v2[i]= soma;
+
+        }
+
+       for(int i=0 ;i < 10;i++){
+
+        System.out.println("valor da soma = " + v2[i]);
+
+       }
 
 
-          int soma = 0;
 
-
-          for(int i =0; i < 10;i++){
-            soma = soma + v1[i];
-            v2[i] = soma;
-
-          }
-
-
-           for( int i = 0 ; i< 10 ; i++){
-              System.err.println("v2" + i + "= " + v2[i]);
-              
-           }
+        
 
    
 
