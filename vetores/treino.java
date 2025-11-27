@@ -5,70 +5,48 @@ public class treino {
     public static void main(String[] args) {
 
         Scanner sc= new Scanner(System.in);
-       
-         int [] v1 = new int [10];
-         int i = 0;
 
-         System.out.println("Digite 10 numeros diferentes");
+         int [] v1= new int [10];
+         int[] v2 = new int [10];
 
-         while(i < 10){
-           
-          System.out.println("Numero" + ( i + 1));
-          int numeros = sc.nextInt();
+         System.out.println("Digite 1- valores para o v1");
 
-          boolean repetido = false;
+          for(int i =0; i < 10; i ++){
+            System.out.println("valor " + i + " ");
 
-          for(int j = 0;j < i; j++){
-            if(v1[j] == numeros){
-              repetido = true;
-              break;
-
-            }
-
-          }
-
-          if(repetido){
-            System.out.println("Numero devem ser diferentes!");
-          } else {
-            v1[i] = numeros;
-            i++;
+            v1[i]= sc.nextInt();
 
           }
 
 
-         }
+          int soma = 0;
 
-          int []  v2 = new int [10];
 
-          for(int k = 0 ;k < v1.length; k++){
-            v2[k]= v1[v1.length - 1 - k]; 
+          for(int i =0; i < 10;i++){
+            soma = soma + v1[i];
+            v2[i] = soma;
 
           }
 
 
-         System.out.println("vetor original");
-         for(int k=0; k < v1.length;k++ ){
-          System.out.print(v1[k] + " ");
+           for( int i = 0 ; i< 10 ; i++){
+              System.err.println("v2" + i + "= " + v2[i]);
+              
+           }
 
-         }
-
-          System.out.println(" Vetor invertido");
-          for(int k = 0; k < v2.length; k++ ){
-
-            System.out.println(v2[k] + " ");
-          }
-
-          sc.close();
-
-        
+   
 
     }
 }
         
+
+// Crie 2 vetores de 10 posições cada um (chame de v1[10] e v2[10]). Digite 10 valores para v1. Agora,
+// use o v2 para armazenar A SOMA de TODOS os valores de índices anteriores de v1, inclusive o
+// próprio índice. Exemplo:
+// v2[0] deve armazenar o valor de v1[0];
+// v2[1] deve armazenar o valor de v1[0] + v1[1];
+// v2[2] deve armazenar o valor de v1[0] + v1[1] + v1[2];
          
-// Ler um vetor de 10 elementos. Crie um segundo vetor, com todos os elementos na
-// ordem inversa, ou seja, o último elemento passará a ser o primeiro, o penúltimo será
-// o segundo e assim por diante. Imprima os dois vetores no final.
 
 
 //new == criar objeto
