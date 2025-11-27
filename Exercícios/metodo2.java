@@ -8,3 +8,6 @@ public class metodo2 {
     }
     
 }
+
+
+//static não precisa ser um objeto para usar
