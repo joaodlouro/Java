@@ -6,23 +6,35 @@ public class v2 {
     
         Scanner sc= new Scanner (System.in);
 
-        int [] v1 = new int [10];
-         int [] v2 = new int [10];
+        System.out.println("informe um valor inteiro: ");
+        int n= sc.nextInt(); //tamnho
 
-         for(int i= 0; i <= 10; i++){
-            v1[i] = sc.nextInt();
+        int v1 [] = new int [50];
 
-         }
+        v1[0] = 1;
 
-         for(int i= 0; i <= 10; i++  ){
 
-            
-   
+        for(int i = 0; i < n;i++ ) {
+          
+           int aux1= 0, aux2;  //auxiliar
+          for(int j = 0;j <= i; j ++ ){
+            aux2 = aux1 + v1[j];
+            aux1= v1[j];
+            v1[j] = aux2; 
+            System.out.printf("%3d", v1[j]);
 
-         }
+
+          }
+          System.out.println();
+
+        }
+
+
+
         
 
-      
+
+    
         
 
     }
@@ -32,8 +44,17 @@ public class v2 {
 
 
 
+// Escreva um programa que leia um número inteiro positivo N e em seguida imprima N linhas do
+// chamado Triângulo de Pascal. Obs: será necessário criar vetores dinamicamente.
+// Considere que N > 2
+// A próxima linha do triângulo é obtida a partir da soma dos elementos da linha
+// anterior, por exemplo a linha 1 4 6 4 1 tem os valores 4 = 1 + 3; 6 = 3 + 3; 4 = 3 +
+// 1; e então são adicionados dois valores 1, no início e no final do vetor.
 
-// Ler um vetor de 10 elementos inteiros e positivos. Criar um segundo vetor da
-// seguinte forma: os elementos de índice par receberão os respectivos elementos
-// divididos por 2; os elementos de índice ímpar receberão os respectivos elementos
-// multiplicados por 3. Imprima os dois vetores.
+
+
+
+
+
+
+
