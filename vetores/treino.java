@@ -31,7 +31,7 @@ public class treino {
   
          ///
 
-       for(int i = 0; i < linhas;i++) {
+       /*for(int i = 0; i < linhas;i++) {
         
          for(int j = 0; j < colunas; j++){
           System.out.printf("%4d |", numeros[i][j]); 
@@ -39,8 +39,16 @@ public class treino {
          }
          System.out.printf("%n");
 
-       }
+       }  */
          
+         for(int[] i: numeros ){
+            for(int valor: i){
+                System.out.printf("%4d |", valor);
+
+            }
+            System.out.printf("%n");
+
+         }
          
          
          
