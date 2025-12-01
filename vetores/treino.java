@@ -7,67 +7,43 @@ public class treino {
 
         Scanner sc= new Scanner(System.in);
 
+        System.out.println("Digite valor do tabuleiro!");
+        int n= sc.nextInt();
+
+         if(n <= 0){
+            System.out.println("Tamanho deve ser positivo! ");
+            sc.close();
+            return;
+
+         } 
+
+        for(int i = 0; i < n; i++){
+            for(int j = 0;j < n; j++){
+            boolean borda = (i ==0) || (i==n -1) || (j == 0) || (j == n - 1);
+            boolean diagonal = (i ==j);
+            boolean  diagonal2 = (i + j == n -1);
 
 
-        final int linhas = 3;
-        final int colunas = 5;
-        
-        //vetor
+             if(borda || diagonal || diagonal2){
+                System.out.printf("X ");
 
-        int [][] numeros = new int [linhas][colunas];
-        // [0,1,2,3,4,5], 
-        // [0,1,2,3,4,5],   
-        // [0,1,2,3,4,5]   // Exemplo              
-        
-        int [] [] num = { {1,32,4,21,32}, {1,2,3,4,1},{2,3,4,1,2}};
-     
-
-       for(int i = 0; i < linhas;i++) {
-        
-         for(int j = 0; j < colunas; j++){
-            numeros[i][j] = new SecureRandom().nextInt(100);
-
-         }
-
-       }
-  
-         ///
-
-       /*for(int i = 0; i < linhas;i++) {
-        
-         for(int j = 0; j < colunas; j++){
-          System.out.printf("%4d |", numeros[i][j]); 
-
-         }
-         System.out.printf("%n");
-
-       }  */
-         
-         for(int[] i: num ){
-            for(int valor: i){
-                System.out.printf("%4d |", valor);
-
+             } else {
+                System.out.printf("O ");
+             }
             }
-            System.out.printf("%n");
+            System.out.println();
+        }
 
-         }
-         
-         
-         
-         
-         
-         
+        sc.close();
 
-        
-    
-   
-
+         
+         
     }
 }
         
 
-
 //new == criar objeto
 
-
  // tamanho / largura do vetor
+
+ // tudo que vale para vetores, também vale para Matrizes!
