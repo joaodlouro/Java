@@ -17,7 +17,9 @@ public class treino {
         int [][] numeros = new int [linhas][colunas];
         // [0,1,2,3,4,5], 
         // [0,1,2,3,4,5],   
-        // [0,1,2,3,4,5]   // Exemplo                   
+        // [0,1,2,3,4,5]   // Exemplo              
+        
+        int [] [] num = { {1,32,4,21,32}, {1,2,3,4,1},{2,3,4,1,2}};
      
 
        for(int i = 0; i < linhas;i++) {
@@ -41,7 +43,7 @@ public class treino {
 
        }  */
          
-         for(int[] i: numeros ){
+         for(int[] i: num ){
             for(int valor: i){
                 System.out.printf("%4d |", valor);
 
