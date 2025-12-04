@@ -1,5 +1,5 @@
 package lista11.vetores11;
-import utilidade.MostrarMatrizes;
+import utils.MostrarMatrizes;
 
 class listaex1{
     public static void main(String[] args) {
@@ -9,7 +9,6 @@ class listaex1{
         int soma = a[0] + a[1] + a[5];
 
         System.out.println("soma == " + soma);
-
 
 
 

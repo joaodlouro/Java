@@ -1,4 +1,4 @@
-package utilidade;
+package utils;
 
 public class MostrarMatrizes {
 
@@ -13,8 +13,8 @@ public class MostrarMatrizes {
         System.out.println("]");
     }
 
-
-          public static void mostraVetorLn(int[] v) {
+          //outro metodo para ln
+         public static void mostraVetorLn(int[] v) {
         for (int i = 0; i < v.length; i++) {
             System.out.println(v[i]);
         }
