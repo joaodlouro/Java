@@ -1,34 +1,16 @@
 package utils;
-
-public class MostrarMatrizes {
-
-    public static void mostraVetor(int[] v) {
-        System.out.print("[");
-        for (int i = 0; i < v.length; i++) {
-            System.out.print(v[i]);
-            if (i < v.length - 1) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println("]");
-    }
-
-          //outro metodo para ln
-         public static void mostraVetorLn(int[] v) {
-        for (int i = 0; i < v.length; i++) {
-            System.out.println(v[i]);
-        }
-       
-  
-    }
-
-}
-
-
-
+ public class MostrarMatrizes {
  
-
     
 
+public static void mostraMatriz(int [][] m){
+    
+    for(int i = 0 ; i < m.length;i++){
+        for(int j=0;j < m[i].length;j++){
+            System.out.print(m[i][j]+ " ");
+        }
+        System.out.println();
+    }
+}
 
- 
+ }

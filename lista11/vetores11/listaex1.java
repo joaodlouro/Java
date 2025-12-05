@@ -1,5 +1,5 @@
 package lista11.vetores11;
-import utils.MostrarMatrizes;
+import utils.MostrarVetores;
 
 class listaex1{
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ class listaex1{
 
         a[4] = 100;
 
-        MostrarMatrizes.mostraVetorLn(a);
+        MostrarVetores.mostraVetorLn(a);
 
 
 

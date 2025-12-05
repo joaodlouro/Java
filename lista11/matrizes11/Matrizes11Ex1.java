@@ -1,5 +1,5 @@
 package lista11.matrizes11;
-import utils.MostrarMatrizes;
+import utils.MostrarVetores;
 import java.util.Random;
 
 public class Matrizes11Ex1 {
