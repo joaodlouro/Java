@@ -1,7 +1,7 @@
 package utils;
- public class MostrarMatrizes {
- 
-    
+import java.util.Random;
+
+public class MostrarMatrizes {
 
 public static void mostraMatriz(int [][] m){
     
@@ -11,6 +11,17 @@ public static void mostraMatriz(int [][] m){
         }
         System.out.println();
     }
+}
+
+public static void  RandomMatriz  (int [][] m){
+    Random rm = new Random();
+    
+    for(int i = 0;i< m.length;i++){
+        for(int j=0;j < m[i].length;j++){
+          m[i][j]= rm.nextInt (50);
+        }
+    }
+   
 }
 
  }
