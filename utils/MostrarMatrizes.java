@@ -1,7 +1,9 @@
 package utils;
 import java.util.Random;
+import java.util.Scanner;
 
 public class MostrarMatrizes {
+    
 
 public static void mostraMatriz(int [][] m){
     
@@ -24,4 +26,14 @@ public static void  RandomMatriz  (int [][] m){
    
 }
 
+public static void IntNumerosMatriz(int [][]m){
+
+    Scanner sc= new Scanner(System.in);
+
+    for(int i = 0 ; i < m.length;i++){
+        for(int j=0;j < m[i].length;j++){
+            m[i][j]= sc.nextInt();
+        }    
+    }
+}
  }
