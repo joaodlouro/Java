@@ -58,4 +58,17 @@ public static void IntNumerosMatriz(int [][]m){
         }    
     }
 }
+
+
+public static void DoubleNumerosMatriz(double [][]m){
+
+    Scanner sc= new Scanner(System.in);
+
+    for(int i = 0 ; i < m.length;i++){
+        for(int j=0;j < m[i].length;j++){
+            m[i][j]= sc.nextDouble();
+        }    
+    }
+}
+
  }
