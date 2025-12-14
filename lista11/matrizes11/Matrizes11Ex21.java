@@ -52,8 +52,10 @@ public class Matrizes11Ex21 {
 
 
                 }
-
+                
              }
+             MostrarMatrizes.mostraMatrizDouble(mA);
+             MostrarMatrizes.mostraMatrizDouble(mB);
 
 
         }else if(op==4){
