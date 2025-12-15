@@ -1,39 +1,34 @@
 package vetores;
 import java.util.Scanner;
 import java.security.SecureRandom;
-
+import utils.MostrarMatrizes;
 public class treino {
     public static void main(String[] args) {
 
-        Scanner sc= new Scanner(System.in);
-        System.out.println("de valor: ");
-        int n = sc.nextInt();
+      
+        int [][] valor = {{1,2,3},
+                         {4,5,6},
+                         {7,8,9}};
 
-        char [] [] tabuleiro = new char [n] [n];
+     int resultado =0;
 
-        for(int i =0;i < n ;i++){
-            for(int j =0; j < n; j++){
-                if(i == 0 || i == n -1 || j == 0 || j == n -1){
-                    tabuleiro[i][j] = 'X';
-                }  
-                else if (i == j) {
-                    tabuleiro[i][j] = 'X';
-                }
-                else if (i + j == n - 1) {
-                    tabuleiro[i][j] = 'X';
-                }
-                else {
-                    tabuleiro[i][j] = 'O';
-                }
+     
+            for(int k =0; k < 3; k++){
+            resultado += valor[1][k] * valor [k][2];            
+               
+
             }
-        }
 
-        for(int i = 0;i< n;i++){
-            for(int j = 0;j < n; j++){
-                System.out.print(tabuleiro[i][j] + " ");
-            }
-            System.out.println();
-        }
+        
+
+
+
+
+     System.out.println(resultado);
+
+
+
+
     }
 }
         
