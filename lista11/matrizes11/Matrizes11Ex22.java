@@ -29,9 +29,6 @@ public class Matrizes11Ex22 {
        MostrarMatrizes.mostraMatriz(C);
 
 
-
-
-
     }
     
 }

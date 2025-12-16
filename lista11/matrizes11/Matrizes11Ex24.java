@@ -1,3 +1,5 @@
+package lista11.matrizes11;
+
 public class Matrizes11Ex24 {
     public static void main(String[] args) {
         int[][] g = {
