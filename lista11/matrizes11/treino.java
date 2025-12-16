@@ -32,7 +32,7 @@ public class treino {
 
             for(int i =0;i < 5;i++){
                 for(int j = 0;j < 10; j++){
-;
+
                       char abcd;
 
                       System.out.println("escolha as respostas entre a e d");
@@ -67,9 +67,7 @@ public class treino {
 
           
 
-for (int i = 0; i < resultados.length; i++) {
-            System.out.println("Aluno " + (i + 1) + ": " + resultados[i]);
-        }
+         MostrarVetores.mostraVetor(resultados);
 
 
 
