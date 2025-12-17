@@ -72,3 +72,15 @@ public static void DoubleNumerosMatriz(double [][]m){
 }
 
  }
+
+/*
+C[i][j] =0;
+              for(int k=0;k <3;k++){
+                C[i][j] += A[i][k] * B[k][j]; 
+
+              }
+lembrar!
+
+C[i][j]=k=0∑2​A[i][k]×B[k][j]
+
+*/
