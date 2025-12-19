@@ -7,17 +7,21 @@ public class listaex2 {
 
     Scanner sc = new Scanner(System.in);
     
-    int []v1 = new int[6];
-  
-     for(int i = 0; i < v1.length; i++){
-        System.out.println("Digite os valores das posiçẽs " + i  + ": ");
-        v1[i] = sc.nextInt();
-     }
+   int []v1 = new int[6];
 
+   System.out.println("De valor para cada posição do vetor 1: ");
+    
 
+    for(int i =0;i < v1.length;i++){
+      
+      v1[i]= sc.nextInt();
 
-  MostrarVetores.mostraVetor(v1);
+    } 
+    System.out.println("-----------");
 
+    MostrarVetores.mostraVetor(v1);
+    
+    sc.close();
 
  }
 

@@ -4,23 +4,21 @@ import utils.MostrarVetores;
 class listaex1{
     public static void main(String[] args) {
 
-        int   a[] = { 1, 0, 5, -2, -5, 7};
+       int [] v1= {1, 0, 5, -2, -5, 7};
+       int soma = 0;
 
-        int soma = a[0] + a[1] + a[5];
+        soma = v1[0] + v1[1] + v1[5];
+        v1[4] = 100;
 
-        System.out.println("soma == " + soma);
-
-
-
-        a[4] = 100;
-
-        MostrarVetores.mostraVetorLn(a);
-
-
-
-
-
+       for(int i =0;i < v1.length;i++){
+       System.out.println(v1[i]);
+       }
         
+       System.out.println("----------------");
+       System.out.println(soma);
+
+
+
     }
 }
 

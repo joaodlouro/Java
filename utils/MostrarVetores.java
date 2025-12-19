@@ -22,6 +22,14 @@ public class MostrarVetores {
   
     }
 
+    public static void MostrarVetoresDouble (double [] v){
+
+        for(int i =0; i < v.length;i++){
+            System.out.println(v[i]);
+
+        }
+    }
+
 
 
 }
