@@ -1,4 +1,5 @@
 package utils;
+import java.util.Scanner;
 
 public class MostrarVetores {
 
@@ -28,6 +29,20 @@ public class MostrarVetores {
             System.out.println(v[i]);
 
         }
+    }
+
+    public static void PrencherVetorInt (int[]v){
+       
+        Scanner sc= new Scanner(System.in);
+
+
+     for(int i=0;i < v.length;i++){
+        v[i]= sc.nextInt();
+
+     }
+
+
+
     }
 
 
