@@ -9,44 +9,26 @@ public class treino {
 
            Scanner sc = new Scanner(System.in);
             
-          int [][] tabuleiro = {{-1,1,1}, {-1,-1,0}, {0,1,0}};
-          
-        
-         
-              for(int i =0; i < 3;i ++){
-                int soma = tabuleiro[i][0] +  tabuleiro[i][1]  + tabuleiro[i][2];
+           int  [] v1 = new int [3];
 
-                if(soma == -2){
+          MostrarVetores.PrencherVetorInt(v1);
 
-                  for(int j =0;j < 3;j++ ){
-                     if(tabuleiro [i]
-                      [j] == 0){
-                        tabuleiro[i][j] = -1;
-                    System.out.println("Jogada em: " + i + ", " + j);
-                    break;
+          for(int i= v1.length -1 ;  i >= 0;--i){
+            System.out.println(v1[i]);
+
+          }
 
 
-                     }
-                     break;
 
-                  }
 
-                }
+
+
+
 
               }
-          
-
-
-        
-        
-
-  MostrarMatrizes.mostraMatriz(tabuleiro);
-
-
-
     }
     
-}
+
 
 
 
