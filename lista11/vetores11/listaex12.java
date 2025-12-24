@@ -13,7 +13,7 @@ public class listaex12 {
         int menorNumero= v1[0] ;//LEMBRAR!!!  
         int maiorNumero = v1[0];//LEMBRAR!!!  
         int soma =0;
-        double media= 0;
+        
 
          for(int i = 0; i < v1.length;i++){
 
@@ -31,7 +31,7 @@ public class listaex12 {
 
          }
 
-         media = (double) soma / v1.length;
+        double media = (double) soma / v1.length;
 
         MostrarVetores.mostraVetor(v1);
 
