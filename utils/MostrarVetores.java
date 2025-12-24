@@ -45,6 +45,13 @@ public class MostrarVetores {
 
     }
 
+    public static void PrencherVetorDouble (double[]v){
+        Scanner sc = new Scanner(System.in);
+        for(int i =0;i < v.length;i++){
+            v[i] = sc.nextDouble();
+        }
+    }
+
 
 
 }
