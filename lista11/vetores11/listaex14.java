@@ -14,7 +14,7 @@ public class listaex14 {
 
                 if(v1[i] == v1 [j]){
 
-                    System.out.println("entrou" + v1[i]);
+                    System.out.println("encontrou" + v1[i]);
                         existem = true;
 
                 }
@@ -28,6 +28,8 @@ public class listaex14 {
             System.out.println("Sem valores repetidos em v1");
 
         }
+
+        MostrarVetores.PrencherVetorInt(v1);
 
 
        
