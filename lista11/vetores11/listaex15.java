@@ -4,37 +4,31 @@ import utils.MostrarVetores;
 public class listaex15 {
     public static void main(String[] args) {
         
-        int [] v1 = new int [20];
+        int [] v1 = new int [4];
 
         MostrarVetores.PrencherVetorInt(v1);        
 
        
-        for(int i = 0;i < v1.length;i++){       
-             boolean valorigual = false;
+        for(int i = 0 ;i < v1.length; i++ ){
 
-        for    (int j = 0; j < i;j++){
+            boolean valorIgual = false;
+
+            for(int j = 0; j < i;j++){
 
                 if(v1[i] == v1[j]){
-                    valorigual = true;
+                    valorIgual = true;
                     break;
 
                 }
 
-            
-
             }
 
-            if(!valorigual){
-                System.out.println(v1[i] + " ");
-
+            if(!valorIgual){
+                System.out.println(v1[i]);
             }
 
-          
 
         }
-
-
-
 
 
 
