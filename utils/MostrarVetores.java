@@ -1,5 +1,6 @@
 package utils;
 import java.util.Scanner;
+import java.util.Random;
 
 public class MostrarVetores {
 
@@ -53,7 +54,17 @@ public class MostrarVetores {
     }
 
 
+    public static void  PrencherVetorDoubleRandom(double []v){
+        Random rm = new Random();
+        for(int i = 0; i < v.length;i++ ){
 
+            v[i]= rm.nextDouble() * 100;
+
+
+
+
+        }
+    }
 }
 
 
