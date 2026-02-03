@@ -12,7 +12,7 @@ public class Matrizes11Ex9 {
        for(int i = 0; i < m1.length;i++){
         for(int j = 0; j < m1[i].length;j++){
 
-            if( j < i ){
+            if( i > j ){
                 soma += m1[i][j];
                 
             }
