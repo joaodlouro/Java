@@ -1,4 +1,4 @@
- package poo.classes;
+ package poo.classes.caneta;
  
 
 public class Caneta {

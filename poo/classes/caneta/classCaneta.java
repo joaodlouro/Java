@@ -1,9 +1,8 @@
-package poo;
-import poo.classes.Caneta;
-import vetores.v2;
+package poo.classes.caneta;
 
 
-public class Aula02 {
+
+public class classCaneta {
     public static void main(String[] args) {
         
         Caneta c1 = new Caneta();
