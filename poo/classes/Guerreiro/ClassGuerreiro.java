@@ -1,12 +1,20 @@
 package poo.classes.Guerreiro;
 
-public class Guerreiro {
+public class ClassGuerreiro {
 
-    public int hp;
-    public int ca;
-    public String nome;
-    public boolean escudo;
-    public  boolean duasEspadas;
+    private int hp;
+    private int ;ca
+    private String nome;
+    private boolean escudo;
+    private  boolean duasEspadas;
+
+    public ClassGuerreiro(String nome, int hp,int ca){
+        this.nome = nome;
+        this.hp= hp;
+        this.ca = ca;
+        this.escudo = false;
+        this.duasEspadas = false;      
+    }
 
 
     public void status(){
@@ -16,6 +24,7 @@ public class Guerreiro {
         System.out.println("nome do guerreiro: " + nome);
         System.out.println("está usando escudo? " + escudo);
         System.out.println("usando 2 espadas? " + duasEspadas);
+        System.out.println("--------------");
 
     }
 
