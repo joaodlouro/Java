@@ -5,9 +5,9 @@ public class Caneta {
 
     public String modelo;
     public String cor;
-    public float ponta;
-    public boolean tampada;
-    public int carga;
+    private float ponta;
+    private boolean tampada;
+    protected int carga;
     
     public void status (){
         System.out.println("uma caneta " + this.cor);
@@ -15,10 +15,13 @@ public class Caneta {
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Ponta: " + this.ponta);
         System.out.println("Carga: " + this.carga);
+        System.out.println("----------------");
 
     }
 
-    public void rabiscar(){
+    //metodos
+
+     public void rabiscar(){
         if(this.tampada == true){
             System.out.println("Erro ");
 
